@@ -1,0 +1,90 @@
+<!--
+COMPSCI 335 Assignment #2M
+Name: Luke Xu
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title id="title">Computer Science @ UoA</title>
+	<link rel="stylesheet" href="djen109.css">
+	<script src="djen109.js"></script>
+</head>
+<body id="main_body">
+	<img id="cs-logo" src="http://redsox.uoa.auckland.ac.nz/ups/logo.svg" alt="CS Logo"></img>
+	<div id="title">Computer Science @ UoA</div>
+	<nav>
+		<table style="width: 100%;" id="tabs">
+			<hr />
+			<tr>
+			<td id="home_tab" class="center" onclick="showhome_tab();">
+				Home
+			</td>
+			<td id="courses_tab" class="center" onclick="showcourses_tab(); getCourses();">
+				Courses
+			</td>
+			<td id="people_tab" class="center" onclick="showpeople_tab();">
+				People
+			</td>
+			<td id="notices_tab" class="center" onclick="shownotices_tab(); getNotices();">
+				Notices
+			</td>
+			<td id="news_tab" class="center" onclick="shownews_tab(); getNews();">
+				News
+			</td>
+			<td id="comments_tab" class="center" onclick="showcomments_tab();">
+				Guest Book
+			</td>
+			</tr>
+		</table>
+		<hr />
+	</nav>
+	<div id="home_section">
+      <section>
+		 <h1>Welcome to the Department of Computer Science</h1>
+         <p>
+            Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students. 
+         </p>
+      </section>
+   </div>
+   <div id="courses_section">
+      <section id="show_courses">
+        <!--List of courses will be shown here-->
+      </section>
+   </div>
+   <div id="people_section">
+      <section>
+         <p>
+            People Section
+         </p>
+      </section>
+   </div>
+   <div id="notices_section">
+      <section id = "show_notices">
+        <!--Notices will be shown here-->
+      </section>
+   </div>
+   <div id="news_section">
+      <section id="show_news">
+        <!--News will be shown here-->
+      </section>
+   </div>
+   <div id="comments_section">
+	  <section>
+		<form>
+			Name:<br><br>
+			<input type="text" name="firstname"><br><br>
+			Comment:<br><br>
+			<input type="text" name="comment"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	  </section>
+      <section>
+		  <p>Latest comments:</p>
+          <iframe id="latest_comments" src="http://redsox.uoa.auckland.ac.nz/ups/UniProxService.svc/htmlcomments"></iframe> 
+      </section>
+   </div>
+</body>
+</html>
